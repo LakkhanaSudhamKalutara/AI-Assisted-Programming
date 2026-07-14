@@ -70,17 +70,17 @@ Below are the Mermaid syntaxes for the four required UML diagrams.
 ### 3.1. Use Case Diagram
 
 ```mermaid
-flowchart LR
-    Librarian([Librarian])
-    Member([Member])
+usecaseDiagram
+    actor Librarian
+    actor Member
     
-    subgraph BookBuddy System
-        UC1(Add Book)
-        UC2(Register Member)
-        UC3(Borrow Book)
-        UC4(Return Book)
-        UC5(View Available Books)
-    end
+    package BookBuddy_System {
+        usecase "Add Book" as UC1
+        usecase "Register Member" as UC2
+        usecase "Borrow Book" as UC3
+        usecase "Return Book" as UC4
+        usecase "View Available Books" as UC5
+    }
     
     Librarian --> UC1
     Librarian --> UC2
