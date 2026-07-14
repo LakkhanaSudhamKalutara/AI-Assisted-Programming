@@ -191,4 +191,30 @@ However, AI is an assistant, not a replacement. The value of a software engineer
 
 ---
 
+## System Execution & Verification Screenshots
+
+Below are the visual records documenting the project environment setup, successful compilation, and system runtime execution across both development approaches.
+
+#### Figure 1: Maven Project Directory Structure Overview
+*[Insert Screenshot Here: Expanded IDE project panel showing `com.assignment.version_a` and `com.assignment.version_b` packages]*
+* **Description**: Displays the explicit package separation within the standard Maven project layout, separating the traditional procedural components from the modern AI-assisted architecture.
+
+#### Figure 2: Traditional Approach (Version A) CLI Execution
+*[Insert Screenshot Here: Terminal output showing BookBuddyAppA running its console loop]*
+* **Description**: Demonstrates successful console interaction, data storage handling, and procedural execution flows under the manual implementation framework.
+
+#### Figure 3: AI-Assisted Approach (Version B) Robust Error Mapping
+*[Insert Screenshot Here: Terminal output showing BookBuddyAppB catching an exception]*
+* **Description**: Showcases the runtime environment catching invalid operational parameters and mapping them cleanly to our custom `BookNotFoundException` through the functional Streams pipeline.
+
+#### Figure 4: Automated Maven Build Lifecycle Success
+*[Insert Screenshot Here: Terminal screen displaying green 'BUILD SUCCESS' message]*
+* **Description**: Confirms successful terminal execution of the `mvn clean compile` lifecycle command, validating the zero-error compilation baseline across all files.
+
+#### Figure 5: AI Code Refactoring Interaction Prompt
+*[Insert Screenshot Here: Screenshot of the AI chat window showcasing the prompt engineering interaction]*
+* **Description**: Documents the specific prompt interaction used to safely implement Java 17 Streams and defensive coding logic within the version B architecture.
+
+---
+
 **GitHub Repository:** [Insert Link Here]
