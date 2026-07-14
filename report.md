@@ -33,17 +33,17 @@ The system was developed using TWO distinct approaches to compare traditional me
 
 #### Use Case Diagram
 ```mermaid
-usecaseDiagram
-    actor Librarian
-    actor Member
+flowchart LR
+    Librarian([Librarian])
+    Member([Member])
     
-    package BookBuddy_System {
-        usecase "Add Book" as UC1
-        usecase "Register Member" as UC2
-        usecase "Borrow Book" as UC3
-        usecase "Return Book" as UC4
-        usecase "View Available Books" as UC5
-    }
+    subgraph BookBuddy System
+        UC1(Add Book)
+        UC2(Register Member)
+        UC3(Borrow Book)
+        UC4(Return Book)
+        UC5(View Available Books)
+    end
     
     Librarian --> UC1
     Librarian --> UC2
